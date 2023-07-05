@@ -11,7 +11,7 @@ router.get('/' , (req,res) => {
     .then(response => response.json())
     .then(data => { 
       const dataMovie =[]
-      const movie= data.results
+      const movie= data.movies
      for (let i =0 ; i < movie.length;i++) {
       const newMovie ={
         title: movie[i].title,
